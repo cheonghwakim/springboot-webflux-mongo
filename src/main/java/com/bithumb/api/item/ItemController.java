@@ -1,4 +1,4 @@
-package com.bithumb.api.item.item;
+package com.bithumb.api.item;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;

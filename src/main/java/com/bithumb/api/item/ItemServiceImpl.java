@@ -1,4 +1,4 @@
-package com.bithumb.api.item.item;
+package com.bithumb.api.item;
 
 import org.springframework.stereotype.Service;
 

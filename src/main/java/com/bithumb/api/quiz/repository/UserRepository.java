@@ -1,6 +1,6 @@
-package com.bithumb.api.item.quiz.domain.repository;
+package com.bithumb.api.quiz.repository;
 
-import com.bithumb.api.item.quiz.domain.User;
+import com.bithumb.api.quiz.domain.User;
 import org.springframework.data.mongodb.repository.ReactiveMongoRepository;
 import org.springframework.stereotype.Repository;
 import reactor.core.publisher.Flux;

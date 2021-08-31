@@ -1,7 +1,5 @@
 package com.bithumb.api.item;
 
-import com.bithumb.api.item.item.ItemController;
-import com.bithumb.api.item.item.ItemService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

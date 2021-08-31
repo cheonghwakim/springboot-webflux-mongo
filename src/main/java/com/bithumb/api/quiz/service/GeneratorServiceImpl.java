@@ -1,6 +1,6 @@
-package com.bithumb.api.item.quiz.service;
+package com.bithumb.api.quiz.service;
 
-import com.bithumb.api.item.quiz.domain.Factor;
+import com.bithumb.api.quiz.domain.Factor;
 import org.springframework.stereotype.Service;
 
 import java.util.Random;

@@ -1,4 +1,4 @@
-package com.bithumb.api.item.quiz.domain;
+package com.bithumb.api.quiz.domain;
 
 public enum Factor {
     MINIMUM, MAXIMUM;

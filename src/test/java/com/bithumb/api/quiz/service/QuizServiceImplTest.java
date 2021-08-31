@@ -1,16 +1,16 @@
-package com.bithumb.api.item.quiz.service;
+package com.bithumb.api.quiz.service;
 
-import com.bithumb.api.item.quiz.domain.Quiz;
+import com.bithumb.api.quiz.domain.Quiz;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
+import reactor.core.publisher.Mono;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
-import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.BDDMockito.given;
 
 @ExtendWith(MockitoExtension.class)
@@ -30,9 +30,10 @@ class QuizServiceImplTest {
     @Test
     void createQuiz() {
         given(generatorService.randomFactor()).willReturn(50, 30); // 조건절 같은 느낌
-        Quiz quiz = quizService.createQuiz();
-        assertThat(quiz.getFactorA(), is(50));
-        assertThat(quiz.getFactorB(), is(30));
-        assertThat(quiz.getResult(), is(1500));
+        Mono<Quiz> quiz = quizService.createQuiz();
+        Quiz q = quiz.block();
+        assertThat(q.getFactorA(), is(50));
+        assertThat(q.getFactorB(), is(30));
+        assertThat(q.getResult(), is(1500));
     }
 }

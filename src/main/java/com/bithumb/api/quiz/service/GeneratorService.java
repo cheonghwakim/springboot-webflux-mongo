@@ -1,4 +1,4 @@
-package com.bithumb.api.item.quiz.service;
+package com.bithumb.api.quiz.service;
 
 public interface GeneratorService {
     int randomFactor();

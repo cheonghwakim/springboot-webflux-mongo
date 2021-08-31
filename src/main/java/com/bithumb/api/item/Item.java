@@ -1,12 +1,11 @@
-package com.bithumb.api.item.item;
+package com.bithumb.api.item;
 
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
-import java.util.ArrayList;
-import java.util.List;
+
 @NoArgsConstructor
 @Entity
 @Data
